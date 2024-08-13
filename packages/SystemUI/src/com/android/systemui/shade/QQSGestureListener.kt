@@ -70,8 +70,8 @@ class QQSGestureListener @Inject constructor(
                     statusBarStateController.getState() == StatusBarState.KEYGUARD) &&
                 !falsingManager.isFalseDoubleTap
         ) {
-            powerManager.goToSleep(e.getEventTime())
-            return true
+            //powerManager.goToSleep(e.getEventTime())
+            return false
         }
         return false
     }
